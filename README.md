@@ -1,5 +1,5 @@
 # dotfiles
-# Color Support
+## Color Support
 Terminals that support 256 colors can use "palette" (.bash\_functions) to print
 out a color-palette.
 - You can pass in indices from this palette to create\_prompt.
@@ -8,14 +8,12 @@ out a color-palette.
 - The Vim integrated terminal is a good example here; it sets TERM=xterm for
   some reason.
 
-# iTerm2/Tmux integration 
+## iTerm2/Tmux integration 
 iTerm2 is integrated with tmux via control mode (man tmux; tmux -CC).
 - Eternal Terminal (et) supports tmux control mode.
 - Mosh doesn't.
-## iTerm2 Preferences
-Profiles are saved as JSON and can be imported. Some important settings are for Triggers, colors, status bar, etc.
 
-# Language & Locale
+## Language & Locale
 tldr; Just override locale to "en\_US.UTF-8"
 - The way a locale is chosen in Mac OS is very simplistic;
   - ll\_CC.encoding; where ll=chosen language, CC=country
@@ -27,7 +25,7 @@ tldr; Just override locale to "en\_US.UTF-8"
 - On Mac, unix progs always use English, seemingly ignoring locale.
    - Might be lacking some localization files; or maybe not compiled in?
 
-#  Vim packages
+##  Vim packages
 - Vim 8+ has native package management, so you can just drop it in ~/.vim/
 - ALE is a good package for language features.
 - Ripgrep (rg) is faster than grep/ag
@@ -40,7 +38,7 @@ tldr; Just override locale to "en\_US.UTF-8"
     - Default colors are shit (include colors that disappear in dark or light
       backgrounds), override in vimrc.
 
-# Vim tips
+## Vim tips
 |command|description|
 |:------|:----------|
 |C-n        | Auto-complete;  opens hover menu                          |
@@ -59,7 +57,7 @@ tldr; Just override locale to "en\_US.UTF-8"
 
 
 
-## Extra commands
+### Extra commands
 |command|description|
 |:------|:----------|
 |gd                 | Go to definition of a token (using ALE)   |
@@ -69,7 +67,16 @@ tldr; Just override locale to "en\_US.UTF-8"
 |:RG PATTERN %      | Ripgrep current file                      |
 |:SemanticHighlight | Turn on Semantic highlighting             |
 
-# Shellcheck?
+## Shellcheck?
 The reasons for these lines are to disable warnings from static analysis.
 - This comes from ALE, via "ShellCheck"
 - They're a bit noisy sometimes, but makes writing bash a lot easier.
+
+# App Settings
+## iTerm2
+Profiles saved as JSON and can be imported. Some important settings are for Triggers, colors, status bar, etc.
+## Karabiner Elements
+Profiles saved as JSON. Default path is `~/.config/karabiner/karabiner.json`
+Things like:
+- Caps-lock -> Esc (tap) & Control (hold)
+- Left shift -> Option/Meta
