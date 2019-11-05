@@ -1,5 +1,4 @@
 # dotfiles
-
 # Color Support
 Terminals that support 256 colors can use "palette" (.bash\_functions) to print
 out a color-palette.
@@ -13,6 +12,8 @@ out a color-palette.
 iTerm2 is integrated with tmux via control mode (man tmux; tmux -CC).
 - Eternal Terminal (et) supports tmux control mode.
 - Mosh doesn't.
+## iTerm2 Preferences
+Profiles are saved as JSON and can be imported. Some important settings are for Triggers, colors, status bar, etc.
 
 # Language & Locale
 tldr; Just override locale to "en\_US.UTF-8"
