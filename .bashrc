@@ -12,6 +12,7 @@ create_prompt 168 38 220  # colors {host, cwd, separator}
 PROMPT_COMMAND=('update_prompt')  # set exit status color & append history
 
 # Options
+stty -ixon  # Disable XON/XOFF switch so Ctrl-S can be used for fwd hist search
 set -o emacs
 shopt -s no_empty_cmd_completion
 shopt -s checkwinsize

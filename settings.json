@@ -1,0 +1,33 @@
+{
+    "intern-tools.showReminderBeforeMeetings": true,
+    "fb.remote-connections.hosts": [
+        {
+            "hostname": "our.perryhobbs.sb.facebook.com",
+            "folders": [
+                "/data/users/perryhobbs/fbsource/fbcode/",
+                "/data/users/perryhobbs/configerator/source/"
+            ]
+        }
+    ],
+    "[cpp]": {
+        "editor.defaultFormatter": "nuclide.cpp"
+    },
+    "interactive-smartlog.pull": "hg pull",
+    "interactive-smartlog.fetch": "jf get",
+    "interactive-smartlog.right-drawer-width": 346,
+    "interactive-smartlog.bottom-drawer-height": 500,
+    "window.zoomLevel": -2,
+    "workbench.colorTheme": "Monokai",
+    "terminal.integrated.fontSize": 16,
+    "editor.fontSize": 16,
+    "breadcrumbs.symbolSortOrder": "type",
+    "fb.ms-remote-connections.hosts": [
+        {
+            "hostname": "our.perryhobbs.sb.facebook.com",
+            "folders": [
+                "/data/users/perryhobbs/fbsource/fbcode/",
+                "/data/users/perryhobbs/configerator/source/"
+            ]
+        }
+    ]
+}
