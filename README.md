@@ -74,7 +74,20 @@ The reasons for these lines are to disable warnings from static analysis.
 
 # App Settings
 ## iTerm2
-Profiles saved as JSON and can be imported. Some important settings are for Triggers, colors, status bar, etc.
+Profiles are saved as JSON and can be imported. It's easier to just do this 
+manually via the GUI since experimenting with automation has been brittle.
+Make sure to set the profile as default (starred) or the default profile 
+(Default) gets loaded at start, eg. triggers, colors, status bar, etc.
+# Property Lists
+Maybe some day figure out how dynamic profiles work with apple's property list configs.
+Seems lots of app configs are stored in plists.
+Some daemon like cfprefsd would watch & overwrite these plist files.
+So a plist aware tool like "defaults" cli is the way to RW multiple plist formats like XML, binary, json. Rather than modifying directly.
+It should be possible to backup & restore profiles with something like...
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/dotfiles/iterm2"
+defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+Not super clear from the docs though, doesn't seem worth digging into right now.
+
 ## Karabiner Elements
 Profiles saved as JSON. Default path is `~/.config/karabiner/karabiner.json`
 Things like:

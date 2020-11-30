@@ -3,7 +3,7 @@
 [ -z "$PS1" ] && return
 
 # shellcheck source=/dev/null
-[ -r ~/.bash_functions ] && source ~/.bash_functions
+[ -r ~/dotfiles/.bash_functions ] && source ~/dotfiles/.bash_functions
 
 sanitize_path # Get rid of duplicate PATH entries
 
@@ -59,3 +59,4 @@ fi
 if command -v rg >/dev/null; then
     alias rg='rg --type-add buck:BUCK,TARGETS,*.bzl'
 fi
+dev='et -c "tmux -CC new -A -s main" perryhobbs.sb'

@@ -1,4 +1,6 @@
 {
+  "Name" : "Perry",
+  "Guid" : "0F0E5DBD-C884-4F78-8B4E-3D5D2AD9394F",
   "Working Directory" : "\/Users\/perryhobbs",
   "Prompt Before Closing 2" : false,
   "Selected Text Color" : {
@@ -33,6 +35,12 @@
     "Green Component" : 0.52885123299854941
   },
   "Triggers" : [
+    {
+      "action" : "iTermHyperlinkTrigger",
+      "parameter" : "https:\/\/www.internalfb.com\/intern\/bunny\/?q=\\0",
+      "regex" : "(P|D|[tT])(\\d{4,10})",
+      "partial" : false
+    }
   ],
   "Mouse Reporting" : true,
   "Cursor Boost" : 0,
@@ -63,14 +71,14 @@
             "maxwidth" : 1.7976931348623157e+308,
             "base: priority" : 7,
             "minwidth" : 0,
-            "base: compression resistance" : 1,
             "shared text color" : {
               "Red Component" : 0.90000000000000002,
               "Color Space" : "sRGB",
               "Blue Component" : 0.63,
               "Alpha Component" : 1,
               "Green Component" : 0.63
-            }
+            },
+            "base: compression resistance" : 1
           },
           "layout advanced configuration dictionary value" : {
             "font" : ".AppleSystemUIFont 12",
@@ -436,9 +444,7 @@
     "Blue Component" : 0.18431372549019609,
     "Green Component" : 0.19607843137254902
   },
-  "Name" : "Perry",
   "Blinking Cursor" : false,
-  "Guid" : "0F0E5DBD-C884-4F78-8B4E-3D5D2AD9394F",
   "Idle Code" : 0,
   "Ansi 10 Color" : {
     "Red Component" : 0.34509803921568627,
@@ -461,9 +467,9 @@
   },
   "Smart Cursor Color" : true,
   "Semantic History" : {
-    "editor" : "com.github.atom",
+    "text" : "",
     "action" : "coprocess",
-    "text" : "echo vim \\1 \\2"
+    "editor" : "com.github.atom"
   },
   "Ambiguous Double Width" : false,
   "Blur Radius" : 30,
